@@ -2,7 +2,7 @@
 {
     public class FindMax
     {
-        public int MaxNumber(int a, int b, int c)
+        public float MaxNumber(float a, float b, float c)
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0) 
                 return a;

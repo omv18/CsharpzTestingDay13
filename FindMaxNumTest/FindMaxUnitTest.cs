@@ -8,20 +8,20 @@ namespace FindMaxNumTest
         [Test]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
         {
-            int result = findMax.MaxNumber(40, 20, 30);
-            Assert.AreEqual(40, result);
+            float result = findMax.MaxNumber(5.7f, 5.5f, 5.3f);
+            Assert.AreEqual(5.7f, result);
         }
         [Test]
         public void GivenMaxSecondNum_WhenAnalysed_ShouldReturnSecondMax()
         {
-            int result = findMax.MaxNumber(20, 40, 30);
-            Assert.AreEqual(40, result);
+            float result = findMax.MaxNumber(5.5f, 5.7f, 5.3f);
+            Assert.AreEqual(5.7f, result);
         }
         [Test]
         public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMax()
         {
-            int result = findMax.MaxNumber(20, 30, 40);
-            Assert.AreEqual(40, result);
+            float result = findMax.MaxNumber(5.3f, 5.5f, 5.7f);
+            Assert.AreEqual(5.7f, result);
         }
     }
 }
