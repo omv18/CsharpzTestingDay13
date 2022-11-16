@@ -1,8 +1,8 @@
 ﻿namespace CsharpzTestingDay
 {
-    public class FindMax
+    public class FindMax<T> where T : IComparable
     {
-        public T MaxNumber<T>(T a, T b, T c) where T : IComparable
+        public T MaxNumber(T a, T b, T c) 
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0) 
                 return a;
