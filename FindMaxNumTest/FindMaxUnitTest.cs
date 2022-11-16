@@ -1,4 +1,6 @@
 using CsharpzTestingDay;
+using System.IO;
+using System;
 
 namespace FindMaxNumTest
 {
@@ -8,20 +10,20 @@ namespace FindMaxNumTest
         [Test]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
         {
-            int result = findMax.MaxNumber(40, 20, 30);
-            Assert.AreEqual(40, result);
+            string result = findMax.MaxNumber("Peach", "Apple", "Banana");
+            Assert.AreEqual("Peach", result);
         }
         [Test]
         public void GivenMaxSecondNum_WhenAnalysed_ShouldReturnSecondMax()
         {
-            int result = findMax.MaxNumber(20, 40, 30);
-            Assert.AreEqual(40, result);
+            string result = findMax.MaxNumber("Apple", "Peach", "Banana");
+            Assert.AreEqual("Peach", result);
         }
         [Test]
         public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMax()
         {
-            int result = findMax.MaxNumber(20, 30, 40);
-            Assert.AreEqual(40, result);
+            string result = findMax.MaxNumber("Apple", "Banana", "Peach");
+            Assert.AreEqual("Peach", result);
         }
     }
 }
